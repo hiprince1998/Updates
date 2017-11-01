@@ -2,5 +2,7 @@
   "name": "update",
   "app_id": "c4753032",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

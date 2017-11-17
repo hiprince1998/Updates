@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -34,7 +34,7 @@ import{ScreenOrientation} from '@ionic-native/screen-orientation';
   providers: [
     StatusBar,
     SplashScreen,ScreenOrientation,
-    Vibration,
+    Vibration,BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

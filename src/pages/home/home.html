@@ -8,5 +8,6 @@
 
   <button ion-button (click)="vibrate()">Vibrate</button>
 <button ion-button color="secondary" (click)="stopVibrate()">Stop vibrate</button> 
-
+<button ion-button (click)="scan()"><ion-icon name="qr-scanner">&nbsp;scan</ion-icon></button>
+<a [href]="result" target="_system">&nbsp;{{result}}</a>
 </ion-content>
